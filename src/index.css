@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0f1418;
-  --color-foreground: #f0f2f5;
+  --color-background: #0b0a12;
+  --color-foreground: #f5f3ff;
 
-  --color-card: #141a1f;
+  --color-card: #121024;
 
-  --color-primary: #20b2a6;
+  --color-primary: #8b5cf6;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #1f2830;
-  --color-secondary-foreground: #20b2a6;
+  --color-secondary: #1c1933;
+  --color-secondary-foreground: #c4b5fd;
 
-  --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
+  --color-muted: #26234a;
+  --color-muted-foreground: #9ca3af;
 
-  --color-border: #242b32;
+  --color-border: #2e2a52;
   --radius: 0.75rem;
 
-  --color-highlight: #f5a623;
-  --color-surface: #1a2329; 
-
+  --color-highlight: #22d3ee;
+  --color-surface: #15122b;
 }
 
 @layer base {
@@ -51,6 +50,9 @@
     backdrop-filter: blur(24px);
     border: 1px solid color_mix(in srgb, var(--color-border) 80%, transparent);
   }
+  .glow-text{
+    text-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
 }
 
 @layer utilities{
@@ -66,7 +68,58 @@
       filter: blur(0);
     }
   }
+  @keyframes slow-drift {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -20px);
+    }
+    75% {
+      transform: translate(30px, 10px);
+    } 
+  }
+  @keyframes animated-border {
+    0% {
+      stroke-dashoffset: 400;
+    }
+    100% {
+      stroke-dashoffset: -550;
+    }
+  }
+  @keyframes identifier {
+    
+  }
   .animate-fade-in {
     animation: fade-in 0.6s ease-out both;
+  }
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.4s;    
+  }
+  .animation-delay-500 {
+    animation-delay: 0.5s;    
+  }
+  .animation-delay-600 {
+    animation-delay: 0.6s;    
+  }
+
+  .group:hover .animated-border-path {
+    animation: animated-border 1.5s linear infinite;
+  }
+
+  .animate-border:hover {
+    background-color: color-mix(in srgb, #8b5cf6 15%, transparent);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px color-mix(in srgb, #8b5cf6 20%, transparent);
   }
 }
