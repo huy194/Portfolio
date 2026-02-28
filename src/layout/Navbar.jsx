@@ -11,13 +11,14 @@ const navLinks = [
         href: '#projects',  
         label: "Projects"
     },
-    {
-        href: '#testimonials',  
-        label: "Testimonials"
-    },
+    
     {       
         href: '#experiences',  
         label: "Experiences"
+    },
+    {
+        href: '#testimonials',  
+        label: "Testimonials"
     },
 
 ];
@@ -40,7 +41,7 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'}`}>
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration 400 ${isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'}`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
                     HuyLe<span className="hover:text-primary">.</span>
@@ -81,11 +82,11 @@ export const Navbar = () => {
                 <div className="md:hidden glass-strong">
                     <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                         {navLinks.map((link, index) => (
-                            <a href={link.href} key={index} className="tex-lg text-muted-foreground hover:text-foreground py-2">
+                            <a href={link.href} key={index} onClick={() => isMobileMenuOpen(false)} className="tex-lg text-muted-foreground hover:text-foreground py-2">
                                 {link.label}
                             </a>
                         ))}
-                        <Button>
+                        <Button onClick={() => isMobileMenuOpen(false)}>
                             Contact Me
                         </Button>
                     </div>
