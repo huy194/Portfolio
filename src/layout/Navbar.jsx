@@ -54,9 +54,11 @@ export const Navbar = () => {
                 {/* CTA Button */}
                 <div className="flex justify-end items-center gap-2">
                     <div className="hidden md:block ">
-                        <Button size="sm">
-                            Contact Me
-                        </Button>
+                        <a href="#contact">
+                            <Button size="sm">
+                                Contact Me
+                            </Button>
+                        </a>
                     </div>
                 </div>
 
