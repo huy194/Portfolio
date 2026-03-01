@@ -6,8 +6,7 @@ import {Navbar} from './layout/Navbar'
 import {About} from './sections/About'  
 import {Projects} from './sections/Projects'
 import {Contact} from './sections/Contact'
-import {Experiences} from './sections/Experiences'
-import {Testimonials} from './sections/Testimonials'
+import Footer from './layout/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,9 +18,9 @@ function App() {
         <Hero />
         <About />
         <Projects />
-
-
+        <Contact/>
       </main>
+      <Footer/>
     </div>
   )
 }
