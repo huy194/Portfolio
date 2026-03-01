@@ -19,7 +19,7 @@
   --radius: 0.75rem;
 
   --color-highlight: #22d3ee;
-  --color-surface: #15122b;
+  --color-surface: #1e1b3a;
 }
 
 @layer base {
@@ -40,15 +40,15 @@
 
 @layer components{
   .glass {
-    background-color: color_mix(in srgb, var(--color-surface) 50%, transparent);
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
-    border: 1px solid color_mix(in srgb, var(--color-border) 50%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
   }
 
   .glass-strong {
-    background-color: color_mix(in srgb, var(--color-surface) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
     backdrop-filter: blur(24px);
-    border: 1px solid color_mix(in srgb, var(--color-border) 80%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
   }
   .glow-text{
     text-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 50%, transparent);
