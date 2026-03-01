@@ -38,7 +38,7 @@ export default function Footer() {
                 href="https://github.com/huy194"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                className="p-2 rounded-lg hover:bg-primary/30 transition-colors"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -47,14 +47,14 @@ export default function Footer() {
                 href="https://linkedin.com/in/huy-mạnh-lê-2aa696176"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                className="p-2 rounded-lg hover:bg-primary/30 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
 
               <a
                 href="mailto:lemanhhuy01@gmail.com"
-                className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                className="p-2 rounded-lg hover:bg-primary/30 transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
