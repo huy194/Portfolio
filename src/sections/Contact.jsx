@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle } from "lucide-react";
 import {Button} from "../components/Button";
 import { useState } from "react";
-import emaijs  from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 
 const contactInfo = [

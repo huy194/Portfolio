@@ -20,6 +20,9 @@
 
   --color-highlight: #22d3ee;
   --color-surface: #15122b;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
 }
 
 @layer base {
@@ -33,9 +36,6 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .font-serif {
-    font-family: 'Playfair Display', serif;
-  } 
 }
 
 @layer components{
@@ -138,7 +138,10 @@
     animation-delay: 0.5s;    
   }
   .animation-delay-600 {
-    animation-delay: 0.6s;    
+    animation-delay: 0.6s;
+  }
+  .animation-delay-800 {
+    animation-delay: 0.8s;
   }
 
   .group:hover .animated-border-path {
