@@ -57,7 +57,7 @@ export const About = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.2 }}
-                className="space-y-8"
+                className="space-y-8 bg-background/50 backdrop-blur-sm rounded-2xl p-6 -m-6"
             >
                 <motion.div variants={fadeUp}>
                 <span className="text-secondary-foreground text-sm font-medium tracking-medium uppercase">

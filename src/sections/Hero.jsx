@@ -1,4 +1,3 @@
-import { Hero3D } from "./Hero3D";
 import profileImg from "../assets/profile.jpg";
 import { Button } from "../components/Button";
 import { ArrowRight, Github, Linkedin, ChevronDown } from "lucide-react";
@@ -10,12 +9,7 @@ const skills = [
 
 export const Hero = () => {
     return (
-    <section className=" relative min-h-screen flex items-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0">
-            <Hero3D />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
-        </div>
+    <section id="hero" className=" relative min-h-screen flex items-center overflow-hidden">
 
         {/* Content */}
         <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
